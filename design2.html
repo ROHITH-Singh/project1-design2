@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEfore and after psuedo slector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <style>
+
+
+
+        body{
+          margin: 0;
+          padding: 0;
+            background-color: black;
+                color:white;
+                
+        }
+
+            header::before{
+                background:url('https://source.unsplash.com/random') no-repeat center center/cover;
+                position: absolute;
+                content: "";
+            
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.3;
+            }
+
+
+            .navigation{
+                display: flex;
+                font-family: 'Yatra One', cursive;
+                
+            }
+
+
+            
+
+
+            li{
+                list-style: none;
+                padding: 34px 25px;
+            }
+
+
+                section{
+                display: flex;
+                flex-direction: column;
+                 
+                align-items: center;
+                height: 344px;
+                justify-content: center;
+                font-family: 'Yatra One', cursive;
+
+
+            }
+            h1{
+                font-size:3em ;
+            }
+            p{
+                font-size: 20px;
+                text-align: center;
+            }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">contact us</li>
+
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <section>
+           <h1> Welcome to coding World</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci veniam mollitia rem eius sapiente ratione molestias, perferendis vel corporis amet dolore exercitationem enim vero. Dolores rem libero sapiente ipsum blanditiis!</p>
+        </section>
+</body>
+</html>
